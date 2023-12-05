@@ -67,11 +67,11 @@ knowledge3 = And(
   Implication(BKnight,(Implication(AKnight, AKnave))),
   Implication(BKnave,(Not(Implication(AKnight, AKnave)))),
   
-  Or(Implication(AKnight, AKnight), Implication(AKnight, AKnave)),
-  Or(Implication(AKnave, AKnight), Implication(AKnave, AKnave)),
-    # CKnave
-    # BKnight
-    # AKnave
+  Implication(AKnight, AKnight),
+  Implication(AKnave, AKnight)
+    # CKnight
+    # BKnave
+    # AKnight
 
 )
 
